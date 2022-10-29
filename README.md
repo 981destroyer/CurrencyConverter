@@ -1,3 +1,3 @@
 ﻿# CurrencyConverter
 
-Einfaches Programm, welches zwischen den Einheiten Euro, US-Dollar, Rubel mit den aktuellen Wechselkursen (29.10.2022) umrechnet.
+A simple program which converts between the currencies Euro, US-Dollar, Rubel based on todays exchange rate (28.10.2022).
