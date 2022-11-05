@@ -3,6 +3,7 @@ public class mainclass {
 
     public static void falseUnit() {
         System.out.println("""
+                            
                             You have entered a wrong unit.
                             Please start again:
                             ------------------------------------------
@@ -40,6 +41,7 @@ public class mainclass {
 
         Scanner userInput = new Scanner(System.in);
         System.out.println("""
+                
                 Which unit do you want to convert?
                 The calculator works with these shortcuts:
                 Euro: EUR
@@ -48,7 +50,9 @@ public class mainclass {
         String inputCurrency = userInput.nextLine();
 
         if ("EUR".equals(inputCurrency)) {
-            System.out.println("How much Euros do you want to convert?");                                               //Wie viel €?
+            System.out.println("""
+                    
+                    How much Euros do you want to convert?""");                                               //Wie viel €?
             do {
                 if (userInput.hasNextDouble()) {
                     eur = userInput.nextDouble();
@@ -60,7 +64,9 @@ public class mainclass {
                 }
             } while(!(isNumber));
 
-            System.out.println("Into which unit do you want to convert?");                                              //in welche Einheit möchtest du umrechnen?;
+            System.out.println("""
+                    
+                    Into which unit do you want to convert?""");                                              //in welche Einheit möchtest du umrechnen?;
             switch (userInput.next()) {
                 case "USD" -> System.out.println(eur + " Euros are " + eur * 1 + " US-Dollars");
                 case "RUB" -> System.out.println(eur + " Euros are " + eur * 61.13 + " Rubel");                         //Eingaben werden umgerechnet
@@ -69,7 +75,9 @@ public class mainclass {
 
 
         } else if ("USD".equals(inputCurrency)) {
-            System.out.println("How much Dollars do you want to convert?");
+            System.out.println("""
+                    
+                    How much Dollars do you want to convert?""");
             do {
                 if (userInput.hasNextDouble()) {
                     usd = userInput.nextDouble();
@@ -81,14 +89,18 @@ public class mainclass {
                 }
             } while(!(isNumber));
 
-            System.out.println("Into which unit do you want to convert?");
+            System.out.println("""
+                    
+                    Into which unit do you want to convert?""");
             switch (userInput.next()) {
                 case "EUR" -> System.out.println(usd + " Dollars are " + usd * 1 + " Euro");
                 case "RUB" -> System.out.println(usd + " Dollars are " + usd * 61.23 + " Rubel");
                 default -> falseUnit();
             }
         } else if ("RUB".equals(inputCurrency)) {
-            System.out.println("How much Rubel do you want to convert?");
+            System.out.println("""
+                    
+                    How much Rubel do you want to convert?""");
             do {
                 if (userInput.hasNextDouble()) {
                     rub = userInput.nextDouble();
@@ -99,7 +111,9 @@ public class mainclass {
                     userInput.next();
                 }
             } while(!(isNumber));
-            System.out.println("Into which unit do you want to convert?");
+            System.out.println("""
+                    
+                    Into which unit do you want to convert?""");
             switch (userInput.next()) {
                 case "EUR" -> System.out.println(rub + " Rubel are " + rub * 0.016 + " Euro");
                 case "USD" -> System.out.println(rub + " Rubel are "+ rub * 0.016 + " US-Dollars");
@@ -123,6 +137,7 @@ public class mainclass {
 
         Scanner userInput = new Scanner(System.in);
         System.out.println("""
+                
                 Welche Einheit möchtest du umrechnen?
                 Der Rechner funktioniert mit diesen Kürzeln:
                 Euro: EUR
@@ -131,7 +146,9 @@ public class mainclass {
         String inputCurrency = userInput.nextLine();
 
         if ("EUR".equals(inputCurrency)) {
-            System.out.println("Wie viel Euro möchtest du umrechnen?");                                                 //Wie viel €?
+            System.out.println("""
+                    
+                    Wie viel Euro möchtest du umrechnen?""");                                                 //Wie viel €?
             do {
                 if (userInput.hasNextDouble()) {
                     eur = userInput.nextDouble();
@@ -143,7 +160,9 @@ public class mainclass {
                 }
             } while(!(isNumber));
 
-            System.out.println("In welche Einheit möchtest du umrechnen");                                              //in welche Einheit möchtest du umrechnen?;
+            System.out.println("""
+                    
+                    In welche Einheit möchtest du umrechnen""");                                              //in welche Einheit möchtest du umrechnen?;
                 switch (userInput.next()) {
                     case "USD" -> System.out.println(eur + " Euro sind " + eur * 1 + " US-Dollar");
                     case "RUB" -> System.out.println(eur + " Euro sind " + eur * 61.13 + " Rubel");                     //Eingaben werden umgerechnet
@@ -152,7 +171,9 @@ public class mainclass {
 
 
         } else if ("USD".equals(inputCurrency)) {
-            System.out.println("Wie viel Dollar möchtest du umrechnen?");
+            System.out.println("""
+                    
+                    Wie viel Dollar möchtest du umrechnen?""");
             do {
                 if (userInput.hasNextDouble()) {
                     usd = userInput.nextDouble();
@@ -164,14 +185,18 @@ public class mainclass {
                 }
             } while(!(isNumber));
 
-            System.out.println("In welche Einheit möchtest du umrechnen?");
+            System.out.println("""
+                    
+                    In welche Einheit möchtest du umrechnen?""");
             switch (userInput.next()) {
                 case "EUR" -> System.out.println(usd + " Dollar sind " + usd * 1 + " Euro");
                 case "RUB" -> System.out.println(usd + " Dollar sind " + usd * 61.23 + " Rubel");
                 default -> falseUnit();
             }
         } else if ("RUB".equals(inputCurrency)) {
-            System.out.println("Wie viel Rubel möchtest du umrechnen?");
+            System.out.println("""
+                    
+                    Wie viel Rubel möchtest du umrechnen?""");
             do {
                 if (userInput.hasNextDouble()) {
                     rub = userInput.nextDouble();
@@ -182,12 +207,15 @@ public class mainclass {
                     userInput.next();
                 }
             } while(!(isNumber));
-            System.out.println("In welche Einheit möchtest du umrechnen");
+            System.out.println("""
+                    
+                    In welche Einheit möchtest du umrechnen""");
             switch (userInput.next()) {
                 case "EUR" -> System.out.println(rub + " Rubel sind " + rub * 0.016 + " Euro");
                 case "USD" -> System.out.println(rub + " Rubel sind "+ rub * 0.016 + " US-Dollar");
                 default -> {
                     System.out.println("""
+                            
                             Du hast eine falsche Einheit eingegeben.
                             Bitte starte von neu:""");
                     convertGer();
